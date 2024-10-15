@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Blog</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h2 class="addBlog_head">Add Blog</h2>
+    <form id="addblog">
+        <label for="title">Title</label>
+        <input required type="text" name="title" id="title" class="blog_value" placeholder="Enter the title for blog">
+        <label>Category</label>
+        <select id="category"required name="category" class="blog_value">
+            <option value="">Select a Category</option>
+            <option value="fashion">Fashion</option>
+            <option value="medical">Medical</option>
+            <option value="it">IT</option>
+            <option value="sports">Sports</option>
+            <option value="cars">Cars</option>
+        </select>
+        <label for="image">Choose Image</label>
+        <input required type="file" id="imageInput" />
+        <label for="date">Date</label>
+        <input required type="date" class="blog_value" name="date" id="date">
+        <label for="desc">Description</label>
+        <textarea  cols="4" rows="4" name="desc" id="desc" placeholder="Enter description"></textarea>
+        <button id="btn" type="submit">Submit</button>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
